@@ -1,21 +1,22 @@
-// Print numbers from 1 to 10
 #include <stdio.h>
 
+const int N = 5;
+float average(int length, int array[]);
+
 int main(void) {
-  int i;
-  int count;
-  int sum = 0;
+    int scores[N];
+    for (int i = 0; i < N; i++) {
+        printf("scores[%i]: ", i);
+        scanf("%d", &scores[i]);
+    }
+    printf("Average: %.2f\n", average(N, scores));
+    return 0;
+}
 
-  // entering data
-  printf("Enter your number: ");
-  scanf("%d", &i);
-
-  for (count = i; count < 100; ++count)
-  {
-    sum = sum + count;
-  }
-
-  printf("Sum: %d\n", sum);
-
-  return 0
+float average(int length, int array[]) {
+    int sum = 0;
+    for (int i = 0; i < length; i++) {
+        sum += array[i];
+    }
+    return (float) sum / length;
 }
