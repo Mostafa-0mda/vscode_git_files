@@ -26,7 +26,7 @@ body{
   width: 50px;
   height: 50px;
   cursor: pointer;
-  padding: 2px 5px;
+  padding: 5px 10px;
   color: #fff;
   min-width: 60px;
   text-align: center
@@ -34,13 +34,14 @@ body{
 .sidebar .logo-details .logo_name{
   color: #fff;
   font-size: 15px;
-  font-weight: 500;
+  font-weight: 400;
+  white-space: nowrap;
 }
 
 .logo-details {
   display: flex;
   align-items: center;
-  padding: 2px;
+  padding: 15px 0px;
 }
 .sidebar .nav-links{
   margin-top: 16px;
@@ -85,6 +86,15 @@ body{
   background-size: cover;
   background-position: center;
 }
+
+.sidebar.active ~ .home-section{
+  width: calc(100% - 60px);
+  left: 60px;
+  background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("https://drive.google.com/uc?export=view&id=1XulPxmlid9AtMNe39m66btg-YnxTDFVZ");
+  background-size: cover;
+  background-position: center;
+}
+
 .home-section nav{
   display: flex;
   justify-content: space-between;
