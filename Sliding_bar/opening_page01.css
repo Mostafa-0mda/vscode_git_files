@@ -21,17 +21,34 @@
 .sidebar.close{
   width: 78px;
 }
-.c_logo{
+
+.c_logo {
   cursor: pointer;
-  padding: 1px 15px;
+  padding: 15px; /* Add some padding to the logo container */
   color: #fff;
-  min-width: 78px;
   text-align: center;
   display: flex;
-  font-size: 30px;
-  height: 50px;
-  line-height: 50px;
+  align-items: center;
+  font-size: 0; /* Remove font size */
+  height: 78px; /* Match the profile image's height */
+  transition: all 0.5s ease; /* Keep the transition smooth */
 }
+
+.sidebar.close .c_logo {
+  width: 78px;
+  padding: 20px; /* Shrink the width when the sidebar is closed */
+}
+
+.c_logo img {
+  height: 52px; /* Match the profile image's height */
+  width: 52px; /* Match the profile image's width */
+  object-fit: cover;
+  border-radius: 50%; /* Make it a circular profile image style */
+  margin-right: 12px; /* Add a little spacing */
+  background: #0A2558;
+  transition: all 0.5s ease; /* Keep the transition smooth */
+}
+
 
 .sidebar .logo-details{
   height: 78px;
@@ -99,6 +116,7 @@
 }
 .sidebar .nav-links li .bx-log-out {
   margin-left: auto; /* Push the logout icon to the end */
+  padding-right: 25px;
 }
 .sidebar .nav-links li a{
   display: flex;
