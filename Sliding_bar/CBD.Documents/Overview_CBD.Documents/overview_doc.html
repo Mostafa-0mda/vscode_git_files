@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<!-- Coding by CodingNepal | www.codingnepalweb.com -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <title> CBD Projects  </title>
+    <link rel="stylesheet" href="overview_doc.css">
+    <!-- Boxiocns CDN Link -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+<body>
+  <div class="sidebar close">
+    <div class="logo-details">
+      <img src="https://drive.google.com/uc?export=view&id=1lIFHGt0GHF-Z8IFIluEqRD-Jq6gFh0C3" class="c_logo">
+      <span class="logo_name">System Technique</span>
+    </div>
+    <ul class="nav-links">
+      <li>
+        <a href="#">
+          <i class='bx bx-grid-alt' ></i>
+          <span class="link_name">Dashboard</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="#">Dashboard</a></li>
+        </ul>
+      </li>
+      <li>
+        <div class="iocn-link">
+          <a href="#">
+            <i class='bx bxs-file-archive'></i>
+            <span class="link_name">Documents     </span>
+          </a>
+          <i class='bx bxs-chevron-down arrow' ></i>
+        </div>
+        <ul class="sub-menu">
+          <li><a class="link_name" href="#">Documents</a></li>
+          <li><a href="#">Overview</a></li>
+          <li><a href="#">Project Contracts</a></li>
+          <li><a href="#">Technical Drawings</a></li>
+          <li><a href="#">Proposal Documents</a></li>
+          <li><a href="#">Project Submittals</a></li>
+          <li><a href="#">Progress Reports</a></li>
+          <li><a href="#">Closeout Documents</a></li>
+
+        </ul>
+      </li>
+      <li>
+        <div class="iocn-link">
+          <a href="#">
+            <i class='bx bx-book-alt' ></i>
+            <span class="link_name">Procurement</span>
+          </a>
+          <i class='bx bxs-chevron-down arrow' ></i>
+        </div>
+        <ul class="sub-menu">
+          <li><a class="link_name" href="#">Procurement</a></li>
+          <li><a href="#">Overview</a></li>
+          <li><a href="#">Purchase Orders</a></li>
+          <li><a href="#">Vendor List</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">
+          <i class='bx bx-pie-chart-alt-2' ></i>
+          <span class="link_name">Warehouse</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="#">Warehouse</a></li>
+        </ul>
+      </li>
+
+      <li>
+        <div class="iocn-link">
+          <a href="#">
+            <i class='bx bxs-dollar-circle'></i>
+            <span class="link_name">Finance</span>
+          </a>
+          <i class='bx bxs-chevron-down arrow' ></i>
+        </div>
+        <ul class="sub-menu">
+          <li><a class="link_name" href="#">Finance</a></li>
+          <li><a href="#">Overview</a></li>
+          <li><a href="#">Invoice & Payment</a></li>
+          <li><a href="#">Expense Tracking</a></li>
+          <li><a href="#">CahFlow Analysis</a></li>
+          <li><a href="#">EarnValue Analysis</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">
+          <i class='bx bx-compass' ></i>
+          <span class="link_name">Resources</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="#">Resources</a></li>
+        </ul>
+      </li>
+
+      <li>
+        <a href="#">
+          <i class='bx bx-cog' ></i>
+          <span class="link_name">Setting</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="#">Setting</a></li>
+        </ul>
+      </li>
+      
+      <li>
+    <div class="profile-details">
+      <div class="profile-content">
+        <img src="https://drive.google.com/uc?export=view&id=1EkMmO0A8xJZ3mk3Rumujcetk9qquZhP4" alt="profileImg">
+      </div>
+      <div class="name-job">
+        <div class="profile_name"> Mostafa Emad</div>
+        <div class="job">Sr. Project Engineer</div>
+      </div>
+      <i class='bx bx-log-out' ></i>
+    </div>
+  </li>
+</ul>
+  </div>
+  <section class="home-section">
+    <div class="home-content">
+      <i class='bx bx-menu' ></i>
+      <span class="text">CBD Projects</span>
+    </div>
+  </section>
+  <div class="home-content">
+    <div class="overview-boxes">
+      <div class="box">
+        <div class="right-side">
+          <div class="box-topic">Total Order</div>
+          <div class="number">40,876</div>
+          <div class="indicator">
+            <i class='bx bx-up-arrow-alt'></i>
+            <span class="text">Up from yesterday</span>
+          </div>
+        </div>
+        <i class='bx bx-cart-alt cart'></i>
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <script>
+  let arrow = document.querySelectorAll(".arrow");
+  for (var i = 0; i < arrow.length; i++) {
+    arrow[i].addEventListener("click", (e)=>{
+   let arrowParent = e.target.parentElement.parentElement;//selecting main parent of arrow
+   arrowParent.classList.toggle("showMenu");
+    });
+  }
+  let sidebar = document.querySelector(".sidebar");
+  let sidebarBtn = document.querySelector(".bx-menu");
+  console.log(sidebarBtn);
+  sidebarBtn.addEventListener("click", ()=>{
+    sidebar.classList.toggle("close");
+  });
+  </script>
+</body>
+</html>
+

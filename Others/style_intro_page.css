@@ -144,7 +144,7 @@
 }
 .sidebar .nav-links li .sub-menu a{
   color: #fff;
-  font-size: 15px;
+  font-size: 14px;
   padding: 5px 0;
   white-space: nowrap;
   opacity: 0.6;
@@ -294,3 +294,7 @@
     left: 0;
   }
 }
+
+
+
+
