@@ -8,14 +8,19 @@
 }
 .sidebar{
   position: fixed;
+  top: 0;
+  left: 0;
   height: 100%;
   width: 240px;
   background: #0A2558;
+  z-index: 100;
   transition: all 0.5s ease;
 }
+
 .sidebar.active{
   width: 60px;
 }
+
 .sidebar .logo-details{
   height: 80px;
   display: flex;
@@ -155,7 +160,7 @@ nav .search-box .bx-search{
   min-width: 190px;
   padding: 0 15px 0 2px;
 }
-nav .profile-details img{
+nav .profile-details i{
   height: 40px;
   width: 40px;
   border-radius: 6px;

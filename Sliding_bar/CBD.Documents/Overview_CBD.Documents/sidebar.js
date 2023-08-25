@@ -1,7 +1,13 @@
 // Function to toggle the "showMenu" class on arrow click
 function toggleMenu(e) {
-  const arrowParent = e.target.parentElement.parentElement; // Selecting main parent of arrow
-  arrowParent.classList.toggle("showMenu");
+  const arrow = e.target;
+  const arrowContainer = arrow.parentElement.parentElement;
+  const containerHasShowMenuClass = arrowContainer.classList.contains("showMenu");
+  if (containerHasShowMenuClass) {
+    arrowContainer.classList.remove("showMenu");
+  } else {
+    arrowContainer.classList.add("showMenu");
+  }
 }
 
 // Add click event listeners to all elements with the class "arrow"
